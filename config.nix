@@ -25,7 +25,7 @@
   hardware.graphics = {
 		enable = true;
 	};
-  	# Load nvidia driver for Xorg and Wayland. if this fails my pc is basically useless.
+  	# Load nvidia driver for Xorg and Wayland. Or change all this to the AMD version of it instead. I use nvidia
   	services.xserver.videoDrivers = ["nvidia"];
 	hardware.nvidia = {
 		open = true;
@@ -46,7 +46,7 @@
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
    console = {
-     font = "Lat2-Terminus16";
+  #   font = "Lat2-Terminus16";
      #keyMap = "us";
      useXkbConfig = true; # use xkb.options in tty.
    };
@@ -98,7 +98,7 @@
    environment.systemPackages = with pkgs; [
     vim
     wget
-	  qutebrowser
+    qutebrowser
     umu-launcher
     foot
     mpv
