@@ -47,7 +47,7 @@
   i18n.defaultLocale = "en_US.UTF-8";
    console = {
      font = "Lat2-Terminus16";
-     keyMap = "us";
+     #keyMap = "us";
      useXkbConfig = true; # use xkb.options in tty.
    };
 
@@ -67,12 +67,11 @@
   # services.printing.enable = true;
 
   # Enable sound.
-   services.pulseaudio.enable = true;
-  # OR
-  # services.pipewire = {
-  #   enable = true;
-  #   pulse.enable = true;
-  # };
+   services.pulseaudio.enable = false;
+   services.pipewire = {
+     enable = true;
+     pulse.enable = true;
+   };
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
