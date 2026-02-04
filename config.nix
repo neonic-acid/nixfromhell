@@ -104,7 +104,6 @@
     mpv
     haruna
     hyfetch
-    ghostty
     jamesdsp
    ];
 
