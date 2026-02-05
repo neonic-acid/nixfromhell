@@ -86,7 +86,7 @@
    };
 
   # programs.firefox.enable = true;
-  services.flatpak.enable = false;
+  services.flatpak.enable = false; #no flatpaks as part of the challenge
   programs.appimage = {
   enable = true;
   binfmt = false;
@@ -105,6 +105,10 @@
     haruna
     hyfetch
     jamesdsp
+    pkgs.kdePackages.ktorrent
+    microsoft-edge # evil bloatware
+    discord # no custom clients
+    wine #no wow64 mode, only normal x86 wine allowed. no winetricks
    ];
 
   # Some programs need SUID wrappers, can be configured further or are
