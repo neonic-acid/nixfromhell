@@ -105,7 +105,8 @@
     haruna
     hyfetch
     jamesdsp
-    pkgs.kdePackages.ktorrent
+    pkgs.kdePackages.ktorrent # mismatching gnome with kde packages is funny
+    pkgs.kdePackages.kjournald
     microsoft-edge # evil bloatware
     discord # no custom clients
     wine #no wow64 mode, only normal x86 wine allowed. no winetricks
