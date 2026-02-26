@@ -96,13 +96,14 @@
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
    environment.systemPackages = with pkgs; [
+    git
     emacs
     pkgs.mc
     wget
     qutebrowser
     umu-launcher
     foot
-    pkgs.cosmic-player
+    pkgs.cosmic-player # cosmic package in GNOME. comedy!
     haruna
     hyfetch
     jamesdsp
