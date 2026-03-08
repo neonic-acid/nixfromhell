@@ -109,6 +109,7 @@
     jamesdsp
     pkgs.kdePackages.ktorrent # mismatching gnome with kde packages is funny
     pkgs.kdePackages.kjournald
+    pkgs.kdePackages.kbreakout
     microsoft-edge # evil bloatware
     discord # no custom clients
     wine #no wow64 mode, only normal x86 wine allowed. no winetricks
