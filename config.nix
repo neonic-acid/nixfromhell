@@ -53,7 +53,7 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.nvidia.acceptLicense = true;
   services.desktopManager.gnome.enable = true;
-  services.displayManager.gdm.enable = true;
+  services.displayManager.sddm.enable = true; # mismatching once again lmao
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -77,7 +77,7 @@
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
      packages = with pkgs; [
-      
+
      ];
    };
 
@@ -87,7 +87,7 @@
   enable = true;
   binfmt = false;
   };
-  
+
 
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
@@ -109,6 +109,7 @@
     microsoft-edge # evil bloatware
     discord # no custom clients
     wine #no wow64 mode, only normal x86 wine allowed. no winetricks
+
    ];
 
   # List services that you want to enable:
@@ -121,8 +122,7 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   networking.firewall.enable = false;
-  
+
   system.stateVersion = "25.11";
 
 }
-
