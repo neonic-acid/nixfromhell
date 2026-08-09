@@ -86,7 +86,7 @@
   programs.appimage = {
   enable = true;
   binfmt = false;
-  };
+  }; #appimages are allowed because they're jank on nixos
 
 
   # List packages installed in system profile.
